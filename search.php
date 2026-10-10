@@ -158,10 +158,10 @@ foreach( $t_plugin_filters as $t_field_name => $t_filter_object ) {
             $t_my_filter[$t_field_name] = gpc_get_bool( $t_field_name );
             break;
         case FILTER_TYPE_MULTI_STRING:
-            $t_my_filter[$t_field_name] = gpc_get_string_array( $t_field_name );
+            $t_my_filter[$t_field_name] = gpc_get_string_array( $t_field_name, array() );
             break;
         case FILTER_TYPE_MULTI_INT:
-            $t_my_filter[$t_field_name] = gpc_get_int_array( $t_field_name );
+            $t_my_filter[$t_field_name] = gpc_get_int_array( $t_field_name, array() );
             break;
     }
 }
